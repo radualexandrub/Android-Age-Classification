@@ -15,7 +15,31 @@ Classes used (based on [The 12 Stages of Life](https://www.institute4learning.co
 - 46 - 60 years old - *mature adulthood*
 - 61 - 75 years old - *late adulthood*
 
+**The model was trained with the default parameters of`image_classifier` from `tflite_model_maker` library.**
+
+```
+INFO:tensorflow:Load image with size: 10674, num_label: 9, labels: 04-06, 07-08, 09-11, 12-19, 20-27, 28-35, 36-45, 46-60, 61-75.
+```
+
+![Loss and Accuracy Graph Age Classification](./READMEimg/androidTF01.jpg)
+
+Model evaluation:
+
+```
+loss, accuracy = model.evaluate(test_data)
+34/34 [==============================] - 46s 1s/step - loss: 1.6116 - accuracy: 0.4373
+```
+
+![Test Age Classification](./READMEimg/androidTF02.jpg)
+
+Confusion Matrix:
+
+![Age Classification Confusion Matrix](./READMEimg/androidTF03.jpg)
+
+<br/>
+
 ## Setting up the project
+
 - Download and install [Android Studio](https://developer.android.com/studio#downloads)
 - Clone this repository
 
