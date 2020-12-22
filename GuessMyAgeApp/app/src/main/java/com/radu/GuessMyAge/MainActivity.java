@@ -40,7 +40,7 @@ import com.google.mlkit.vision.face.FaceDetectorOptions;
 public class MainActivity extends AppCompatActivity {
 
     // Face detector
-    private FaceDetector faceDetector;
+//    private FaceDetector faceDetector;
 
     /**
      * Requests Codes to identify camera and permission requests
@@ -61,19 +61,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // initalizing ui elements
+        // initializing ui elements
         initializeUIElements();
 
-        // Set FaceDetectorOptions
-        FaceDetectorOptions options =
-                new FaceDetectorOptions.Builder()
-                        .setPerformanceMode(FaceDetectorOptions.PERFORMANCE_MODE_FAST)
-                        .setContourMode(FaceDetectorOptions.LANDMARK_MODE_NONE)
-                        .setClassificationMode(FaceDetectorOptions.CLASSIFICATION_MODE_NONE)
-                        .build();
-
-        FaceDetector detector = FaceDetection.getClient(options);
-        faceDetector = detector;
+//        // Set FaceDetectorOptions
+//        FaceDetectorOptions options =
+//                new FaceDetectorOptions.Builder()
+//                        .setPerformanceMode(FaceDetectorOptions.PERFORMANCE_MODE_FAST)
+//                        .setContourMode(FaceDetectorOptions.LANDMARK_MODE_NONE)
+//                        .setClassificationMode(FaceDetectorOptions.CLASSIFICATION_MODE_NONE)
+//                        .build();
+//
+//        FaceDetector detector = FaceDetection.getClient(options);
+//        faceDetector = detector;
     }
 
     /**
@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
         imageView = findViewById(R.id.iv_capture);
         listView = findViewById(R.id.lv_probabilities);
         Button takePicture = findViewById(R.id.bt_take_picture);
-        final Button openGallery  = findViewById(R.id.bt_open_gallery);
+        Button openGallery  = findViewById(R.id.bt_open_gallery);
 
         /*
          * Creating an instance of our tensor image classifier
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // checking whether camera permissions are available.
                 // if permission is avaialble then we open camera intent to get picture
-                // otherwise reqeusts for permissions
+                // otherwise request for permissions
                 if (hasPermission()) {
                     openCamera();
                 } else {

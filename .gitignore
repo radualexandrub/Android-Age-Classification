@@ -1,5 +1,6 @@
 *.iml
 .gradle
+
 /local.properties
 /.idea/caches
 /.idea/libraries
@@ -7,6 +8,14 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+
+/GuessMyAgeApp/.idea/caches
+/GuessMyAgeApp/.idea/libraries
+/GuessMyAgeApp/.idea/modules.xml
+/GuessMyAgeApp/.idea/workspace.xml
+/GuessMyAgeApp/.idea/navEditor.xml
+/GuessMyAgeApp/.idea/assetWizardSettings.xml
+
 .DS_Store
 /build
 /captures
