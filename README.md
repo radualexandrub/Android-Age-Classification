@@ -4,7 +4,7 @@ Age Classification App using Native Android. The quantized `.tflite` model was t
 
 Face databases used: [UTKFace](https://susanqq.github.io/UTKFace/) combined with [Appa-Real](http://chalearnlap.cvc.uab.es/dataset/26/description/).
 
-![Android Age Classification App](./READMEImg/ss01.jpg)
+![Android Age Classification App](./READMEimg/ss01.jpg)
 
 ## Contents
 
@@ -17,7 +17,7 @@ Face databases used: [UTKFace](https://susanqq.github.io/UTKFace/) combined with
 
 ## Screenshots
 
-![Android Age Classification App](./READMEImg/ss02.jpg)
+![Android Age Classification App](./READMEimg/ss02.jpg)
 
 Face images generated from [ThisPersonDoesNotExist](https://thispersondoesnotexist.com/).
 
